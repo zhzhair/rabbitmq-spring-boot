@@ -1,0 +1,11 @@
+安装步骤：
+	1.安装erlang并配置环境变量,执行erl命令确定是否安装成功;
+	2.RabbitMQ Service默认是自动勾选中的，这里我们取消勾选。选中就会添加到windows服务中开机启动。 
+	3.如果安装时选择了安装为服务，是自动启动的。
+	如果没有，刚输入：#####发现不对，应该是直接打开rabbit-server.bat
+	rabbitmq-service start 启动;
+	rabbitmq-service stop 停止; 
+	rabbitmq-service remove 移除; 
+	rabbitmq-service install 安装为服务	
+	4.进入安装目录下的sbin目录，执行cmd命令安装插件：rabbitmq-plugins enable rabbitmq_management。	
+	5.启动成功后，浏览器中输入http://localhost:15672，可以看到管理界面，默认用户密码是：guest/guest
