@@ -1,0 +1,48 @@
+## user datasource
+user.datasource:
+  driverClassName: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/exercise_user?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+  username: root
+  password: 123456
+
+## demo datasource
+userAction.datasource:
+  driverClassName: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/exercise_user_action?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+  username: root
+  password: 123456
+
+server:
+  port: 80
+  tomcat:
+    uri-encoding: utf-8
+    max-threads: 1000
+    max-connections: 900
+    min-spare-threads: 100
+    accesslog:
+      pattern: '%{X-Forwarded-For}i %h %l %u %t "%r" %s %b %T'
+      enabled: false
+      directory: ${user.dir}/logs
+      prefix: access.${HOST:127.0.0.1}.${server.port:8080}
+
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+#    支持发布确认
+    publisher-confirms: true
+#    支持发布返回
+    publisher-returns: true
+    listener:
+      simple:
+#      采用手动应答
+        acknowledge-mode: manual
+#        当前监听容器数
+        concurrency: 1
+#        最大数
+        max-concurrency: 1
+#        是否支持重试
+        retry:
+          enabled: true
