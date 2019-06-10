@@ -1,11 +1,11 @@
-°²×°²½Öè£º
-	1.°²×°erlang²¢ÅäÖÃ»·¾³±äÁ¿,Ö´ĞĞerlÃüÁîÈ·¶¨ÊÇ·ñ°²×°³É¹¦;
-	2.RabbitMQ ServiceÄ¬ÈÏÊÇ×Ô¶¯¹´Ñ¡ÖĞµÄ£¬ÕâÀïÎÒÃÇÈ¡Ïû¹´Ñ¡¡£Ñ¡ÖĞ¾Í»áÌí¼Óµ½windows·şÎñÖĞ¿ª»úÆô¶¯¡£ 
-	3.Èç¹û°²×°Ê±Ñ¡ÔñÁË°²×°Îª·şÎñ£¬ÊÇ×Ô¶¯Æô¶¯µÄ¡£
-	Èç¹ûÃ»ÓĞ£¬¸ÕÊäÈë£º#####·¢ÏÖ²»¶Ô£¬Ó¦¸ÃÊÇÖ±½Ó´ò¿ªrabbit-server.bat
-	rabbitmq-service start Æô¶¯;
-	rabbitmq-service stop Í£Ö¹; 
-	rabbitmq-service remove ÒÆ³ı; 
-	rabbitmq-service install °²×°Îª·şÎñ	
-	4.½øÈë°²×°Ä¿Â¼ÏÂµÄsbinÄ¿Â¼£¬Ö´ĞĞcmdÃüÁî°²×°²å¼ş£ºrabbitmq-plugins enable rabbitmq_management¡£	
-	5.Æô¶¯³É¹¦ºó£¬ä¯ÀÀÆ÷ÖĞÊäÈëhttp://localhost:15672£¬¿ÉÒÔ¿´µ½¹ÜÀí½çÃæ£¬Ä¬ÈÏÓÃ»§ÃÜÂëÊÇ£ºguest/guest
+å®‰è£…æ­¥éª¤ï¼š
+	1.å®‰è£…erlangå¹¶é…ç½®ç¯å¢ƒå˜é‡,æ‰§è¡Œerlå‘½ä»¤ç¡®å®šæ˜¯å¦å®‰è£…æˆåŠŸ;
+	2.RabbitMQ Serviceé»˜è®¤æ˜¯è‡ªåŠ¨å‹¾é€‰ä¸­çš„ï¼Œè¿™é‡Œæˆ‘ä»¬å–æ¶ˆå‹¾é€‰ã€‚é€‰ä¸­å°±ä¼šæ·»åŠ åˆ°windowsæœåŠ¡ä¸­å¼€æœºå¯åŠ¨ã€‚
+	3.å¦‚æœå®‰è£…æ—¶é€‰æ‹©äº†å®‰è£…ä¸ºæœåŠ¡ï¼Œæ˜¯è‡ªåŠ¨å¯åŠ¨çš„ã€‚
+	å¦‚æœæ²¡æœ‰ï¼Œåˆšè¾“å…¥ï¼š#####å‘ç°ä¸å¯¹ï¼Œåº”è¯¥æ˜¯ç›´æ¥æ‰“å¼€rabbit-server.bat
+	rabbitmq-service start å¯åŠ¨;
+	rabbitmq-service stop åœæ­¢;
+	rabbitmq-service remove ç§»é™¤;
+	rabbitmq-service install å®‰è£…ä¸ºæœåŠ¡
+	4.è¿›å…¥å®‰è£…ç›®å½•ä¸‹çš„sbinç›®å½•ï¼Œæ‰§è¡Œcmdå‘½ä»¤å®‰è£…æ’ä»¶ï¼šrabbitmq-plugins enable rabbitmq_managementã€‚
+	5.å¯åŠ¨æˆåŠŸåï¼Œæµè§ˆå™¨ä¸­è¾“å…¥http://localhost:15672ï¼Œå¯ä»¥çœ‹åˆ°ç®¡ç†ç•Œé¢ï¼Œé»˜è®¤ç”¨æˆ·å¯†ç æ˜¯ï¼šguest/guest

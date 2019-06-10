@@ -7,11 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="datasources" />
+        <module name="demo (1)" />
+        <module name="demo (2)" />
         <module name="multiDatasources" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="datasources" target="1.8" />
+      <module name="demo (1)" target="1.8" />
+      <module name="demo (2)" target="1.8" />
       <module name="multiDatasources" target="1.8" />
     </bytecodeTargetLevel>
   </component>
