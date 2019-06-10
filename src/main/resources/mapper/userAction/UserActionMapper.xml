@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.example.demo.user.daoAction.UserActionMapper">
-
-    <insert id="addLoginHistory">
-        insert into user_login (user_id,login_time) values (#{userId},SYSDATE())
-    </insert>
-
-</mapper>
